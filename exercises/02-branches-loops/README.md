@@ -43,7 +43,7 @@ fn main() {
     if a > b && b > c {
         println!("YES");
     } else {
-    println!("NO");
+        println!("NO");
     }
 }
 ```
@@ -61,7 +61,7 @@ fn main() {
     let number = 5;
 
     for i in 1..11 {
-    println!("{} x {} = ", number, i);
+        println!("{} x {} = ", number, i);
     }
 }
 ```

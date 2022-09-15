@@ -30,22 +30,20 @@ Modify the source code so that it determines if at **least one of 3** given numb
 
 ## 02-1: Ascending Integers?
 
-In Visual Studio Code, create a new file in **BranchesLoops** called *ascendingIntegers.go*.  Use the source code provided below as starter code in your file.
+In Visual Studio Code, create a new file in **BranchesLoops** called *ascending_int.rs*.  Use the source code provided below as starter code in your file.
 
-```go
-package main
-
-import "fmt"
-
-func main() {
-	// Declare another variable with its value
-	a, b, c := 10, 15, 20
+```rust
+fn main() {
+	// Create variables with values
+	let a = 10;
+    let b = 15;
+    let c = 20;
 
 	// Are these values descending?
 	if a > b && b > c {
-		fmt.Println("YES")
+		println!("YES");
 	} else {
-		fmt.Println("NO")
+		println!("NO");
 	}
 }
 ```
@@ -56,18 +54,14 @@ Modify the source code so that it determines whether 4 variables: *a*, *b*, *c*,
 
 
 ## 02-2: Multiplication Table  
-In Visual Studio Code, create a new file in **BranchesLoops** called *multTable.go*.  Use the source code provided below as starter code in your file.
+In Visual Studio Code, create a new file in **BranchesLoops** called *mult_table.rs*.  Use the source code provided below as starter code in your file.
 
-```go
-package main
+```rust
+fn main() {
+	let number = 5;
 
-import "fmt"
-
-func main() {
-	number := 5
-
-	for i := 1; i <= 10; i++ {
-		fmt.Printf("%d x %d = \n", number, i)
+	for i in 1..11 {
+		println!("{} x {} = ", number, i);
 	}
 }
 ```
@@ -83,71 +77,57 @@ Modify the source code so that the multiplication table for the variable *number
   5 x 10 = 50
 ```
 ## 02-3: Divisors
-In Visual Studio Code, create a new file in **BranchesLoops** called *divisors.go*.  Modify the starter code below so that it outputs **all the divisors** of a number given as input.
+In Visual Studio Code, create a new file in **BranchesLoops** called *divisors.rs*.  Modify the starter code below so that it outputs **all the divisors** of a number given as input.
 
-```go
-package main
+```rust
+fn main() {
+	let number = 12;
 
-import "fmt"
+    print!("Divisors of {}: ", number);
 
-func main() {
-	number := 12
-
-	for i := 1; i <= number; i++ {
+	for i in 1..(12+1) {
 
 		// Is the remainder of (number / i) equal to zero?
 
-		fmt.Println(i)
+		print!("{} ",i);
 	}
 }
 ```
-
-For *number := 12*
 
 ### Expected Output:
 ```
-  1
-  2
-  3
-  4
-  6
-  12
+Divisors of 12: 1 2 3 4 6 12
 ```
 
 ## 02-4: Perfect Numbers
-In Visual Studio Code, create a new file in **BranchesLoops** called *perfectNumber.go*.  The **divisors** of a **perfect number** ***(except for the number itself)*** add up to the number. For example: 6 has divisors 1, 2, 3, 6 and 1 + 2 + 3 = 6. So, 6 is a perfect number. Modify the starter code so that it determines whether a number is **perfect**.
+In Visual Studio Code, create a new file in **BranchesLoops** called *perfect.rs*.  The **divisors** of a **perfect number** ***(except for the number itself)*** add up to the number. For example: 6 has divisors 1, 2, 3, 6 and 1 + 2 + 3 = 6. So, 6 is a perfect number. Modify the starter code so that it determines whether a number is **perfect**.
 
-```go
-package main
+```rust
+fn main() {
+	let number = 12;
+	let mut sum = 0;
 
-import "fmt"
-
-func main() {
-	number := 12
-	sum := 0
-
-	for i := 1; i < number; i++ {
+	for i in 1..number {
 
 		// Is the remainder of (number / i) equal to zero?
 
-		sum = sum + i
+		sum = sum + i;
 	}
 
 	if sum == number {
-		fmt.Printf("The number %d is a perfect number.", number)
+		println!("The number {} is a perfect number.", number);
 	}
-
 }
 ```
 
-For *number := 6*
+For ```let number = 6```
 
 ### Expected Output:
 ```
   The number 6 is a perfect number.
 ```
 
-For *number := 10*
+For ```let number = 10```
 
 ### Expected Output:
 ```

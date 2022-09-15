@@ -9,17 +9,17 @@ In Visual Studio Code, create a new file in **BranchesLoops** called *one_odd.rs
 
 ```rust
 fn main() {
-	// Create variables with values
-	let a = 10;
+    // Create variables with values
+    let a = 10;
     let b = 15;
 
-	// Is at least one value even?
-	// Note != is the NOT EQUAL TO operator
-	if a%2 == 0 || b%2 == 0 {
-		println!("YES");
-	} else {
-		println!("NO");
-	}
+    // Is at least one value even?
+    // Note != is the NOT EQUAL TO operator
+    if a%2 == 0 || b%2 == 0 {
+       println!("YES");
+    } else {
+       println!("NO");
+    }
 }
 ```
 
@@ -34,17 +34,17 @@ In Visual Studio Code, create a new file in **BranchesLoops** called *ascending_
 
 ```rust
 fn main() {
-	// Create variables with values
-	let a = 10;
+    // Create variables with values
+    let a = 10;
     let b = 15;
     let c = 20;
 
-	// Are these values descending?
-	if a > b && b > c {
-		println!("YES");
-	} else {
-		println!("NO");
-	}
+    // Are these values descending?
+    if a > b && b > c {
+        println!("YES");
+    } else {
+    println!("NO");
+    }
 }
 ```
 
@@ -58,39 +58,39 @@ In Visual Studio Code, create a new file in **BranchesLoops** called *mult_table
 
 ```rust
 fn main() {
-	let number = 5;
+    let number = 5;
 
-	for i in 1..11 {
-		println!("{} x {} = ", number, i);
-	}
+    for i in 1..11 {
+    println!("{} x {} = ", number, i);
+    }
 }
 ```
 Modify the source code so that the multiplication table for the variable *number* is printed out up to 10.  For example,
 
 ### Expected Output:
 ```
-  5 x 1 = 5
-  5 x 2 = 10
-  5 x 3 = 15
-  5 x 4 = 20
-  …
-  5 x 10 = 50
+5 x 1 = 5
+5 x 2 = 10
+5 x 3 = 15
+5 x 4 = 20
+…
+5 x 10 = 50
 ```
 ## 02-3: Divisors
 In Visual Studio Code, create a new file in **BranchesLoops** called *divisors.rs*.  Modify the starter code below so that it outputs **all the divisors** of a number given as input.
 
 ```rust
 fn main() {
-	let number = 12;
+    let number = 12;
 
     print!("Divisors of {}: ", number);
 
-	for i in 1..(12+1) {
+    for i in 1..(12+1) {
 
-		// Is the remainder of (number / i) equal to zero?
+        // Is the remainder of (number / i) equal to zero?
 
-		print!("{} ",i);
-	}
+        print!("{} ",i);
+    }
 }
 ```
 
@@ -104,19 +104,19 @@ In Visual Studio Code, create a new file in **BranchesLoops** called *perfect.rs
 
 ```rust
 fn main() {
-	let number = 12;
-	let mut sum = 0;
+    let number = 12;
+    let mut sum = 0;
 
-	for i in 1..number {
+    for i in 1..number {
 
-		// Is the remainder of (number / i) equal to zero?
+    // Is the remainder of (number / i) equal to zero?
 
-		sum = sum + i;
-	}
+        sum = sum + i;
+    }
 
-	if sum == number {
-		println!("The number {} is a perfect number.", number);
-	}
+    if sum == number {
+        println!("The number {} is a perfect number.", number);
+    }
 }
 ```
 
@@ -124,12 +124,12 @@ For ```let number = 6```
 
 ### Expected Output:
 ```
-  The number 6 is a perfect number.
+The number 6 is a perfect number.
 ```
 
 For ```let number = 10```
 
 ### Expected Output:
 ```
-  The number 10 is NOT a perfect number.
+The number 10 is NOT a perfect number.
 ```

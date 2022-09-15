@@ -10,13 +10,13 @@ Create a new file called *average.rs* with the following source code
 
 ```rust
 fn main() {
-	let m1 = 80.0;
-	let m2 = 90.0;
-	let m3 = 96.0;
+    let m1 = 80.0;
+    let m2 = 90.0;
+    let m3 = 96.0;
 
-	let average = (m1 + m2 + m3) / 3;
+    let average = (m1 + m2 + m3) / 3;
 
-	println!("Average: {}", average);
+    println!("Average: {}", average);
 }
 ```
 
@@ -33,11 +33,11 @@ In Visual Studio Code, create a new file in **Numbers** called *cylinder_volume.
 use std::f64::consts;
 
 fn main() {
-	let radius = 5;
+    let radius = 5;
 
-	let area = consts::PI * i32::pow(radius, 2);
+    let area = consts::PI * i32::pow(radius, 2);
 
-	println!("Area of the Circle: {}", area);
+    println!("Area of the Circle: {}", area);
 }
 ```
 
@@ -49,13 +49,13 @@ In Visual Studio Code, create a new file in **Numbers** called *hypotenuse.rs*. 
 
 ```rust
 fn main() {
-	let a = 3;
-	let b = 4;
+    let a = 3;
+    let b = 4;
 
     let sum = a + b;
-	let hypotenuse = sum.sqrt();
+    let hypotenuse = sum.sqrt();
 
-	println!("Hypotenuse: {}", hypotenuse);
+    println!("Hypotenuse: {}", hypotenuse);
 }
 ```
 
@@ -64,10 +64,10 @@ In Visual Studio Code, create a new file in **Numbers** called *swap.rs*.  Modif
 
 ```rust
 fn main() {
-	let number = 75;
+    let number = 75;
     let swap: i32;
 
-	println!("Tens: {}", number/10);
-	println!("Remainder: {}", number%10);
+    println!("Tens: {}", number/10);
+    println!("Remainder: {}", number%10);
 }
 ```

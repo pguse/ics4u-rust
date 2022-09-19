@@ -84,13 +84,13 @@ fn main(){
     println!("GCD of 48 and 36: {}", gcd(48, 36));
 }
 
-fn gcd(m: i32, n: i32) -> i32 {
+fn gcd(m: u32, n: u32) -> u32 {
     // Return the correct greatest common divisor
     // between m and n
     m+n
 }
 ```
-Write a function called **gcd(m: i32, n:32) -> i32** that **returns** an **i32** representing the greatest common divisor of the numbers m and n, assuming m > n. The best-known algorithm for finding a greatest common divisor is Euclid’s Algorithm.
+Write a function called **gcd(m: u32, n: u32) -> u32** that **returns** an **u32** representing the greatest common divisor of the numbers m and n, assuming m > n. The best-known algorithm for finding a greatest common divisor is Euclid’s Algorithm.
 
 Euclid’s Algorithm states that the greatest common divisor of two integers m and n is 
 

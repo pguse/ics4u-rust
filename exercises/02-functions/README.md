@@ -66,14 +66,14 @@ fn main(){
     println!("Is 15 prime? {}", is_prime(15));
 }
 
-fn is_prime(num: i32) -> bool {
+fn is_prime(num: u32) -> bool {
     // Return the correct boolean value: true or false
     // depending upon whether the variable num is a prime number
     num == 1
 }
 ```
 
-Write a function called **is_prime(num: i32) -> bool** that determines whether an integer **num** is prime and **returns** a **bool** value ... either **true** or **false** . 
+Write a function called **is_prime(num: u32) -> bool** that determines whether an integer **num** is prime and **returns** a **bool** value ... either **true** or **false** . 
 
 ## 02-4: Greatest Common Divisor
 
@@ -90,7 +90,7 @@ fn gcd(m: u32, n: u32) -> u32 {
     m+n
 }
 ```
-Write a function called **gcd(m: u32, n: u32) -> u32** that **returns** an **u32** representing the greatest common divisor of the numbers m and n, assuming m > n. The best-known algorithm for finding a greatest common divisor is Euclid’s Algorithm.
+Write a function called **gcd(m: u32, n: u32) -> u32** that **returns** a **u32** representing the greatest common divisor of the numbers m and n, assuming m > n. The best-known algorithm for finding a greatest common divisor is Euclid’s Algorithm.
 
 Euclid’s Algorithm states that the greatest common divisor of two integers m and n is 
 

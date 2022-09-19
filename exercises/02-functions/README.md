@@ -90,7 +90,9 @@ fn gcd(m: i32, n: i32) -> i32 {
     m+n
 }
 ```
-Write a function called **gcd(m: i32, n:32) -> i32** that **returns** an **i32** representing the greatest common divisor of the numbers m and n, assuming m > n. The best-known algorithm for finding a greatest common divisor is Euclid’s Algorithm. Euclid’s Algorithm states that the greatest common divisor of two integers m and n is 
+Write a function called **gcd(m: i32, n:32) -> i32** that **returns** an **i32** representing the greatest common divisor of the numbers m and n, assuming m > n. The best-known algorithm for finding a greatest common divisor is Euclid’s Algorithm.
+
+Euclid’s Algorithm states that the greatest common divisor of two integers m and n is 
 
 * n if n divides into m completely.
 * However, if n does not divide into m completely, then the answer is the **greatest common divisor** of n and the **remainder** of m divided by n.

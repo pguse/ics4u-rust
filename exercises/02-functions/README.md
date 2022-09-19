@@ -6,7 +6,7 @@ In Visual Studio Code, create a folder called **Functions** and then open it. No
 
 Create the following functions and implement / use them in the **main** function.
 
-## 04-0: Slope
+## 02-0: Slope
 
 Create a new file called *slope.rs* with the following source code
 
@@ -23,7 +23,7 @@ fn slope(x1: f64, y1: f64, x2: f64, y2: f64) -> f64 {
 
 Write a function called **slope(x1: f64, y1: f64, x2: f64, y2: f64) -> f64** that calculates and **returns** an **f64** value representing the slope of a line passing through the points (x1,y1) and (x2,y2).
 
-## 04-1: Hypotenuse
+## 02-1: Hypotenuse
 
 Create a new file called *hypotenuse.rs* with the following source code
 
@@ -40,7 +40,7 @@ fn hypotenuse(a: f64, b: f64) -> f64 {
 
 Write a function called **hypotenuse(a: f64, b: f64) -> f64** that calculates and **returns** an **f64** value representing the hypotenuse of a right triangle with sides a and b.
 
-## 04-2: Distance
+## 02-2: Distance
 
 Create a new file called *distance.rs* with the following source code
 
@@ -57,7 +57,7 @@ fn distance(x1: f64, y1: f64, x2: f64, y2: f64) -> f64 {
 
 Write a function called **distance(x1: f64, y1: f64, x2: f64, y2: f64) -> f64** that calculates and **returns** an **f64** representing the distance between the points (x1,y1) and (x2,y2).
 
-## 04-3: Prime
+## 02-3: Prime
 
 Create a new file called *prime.rs* with the following source code
 
@@ -75,7 +75,7 @@ fn is_prime(num: i32) -> bool {
 
 Write a function called **is_prime(num: i32) -> bool** that determines whether an integer **num** is prime and **returns** a **bool** value ... either **true** or **false** . 
 
-## 04-4: Greatest Common Divisor
+## 02-4: Greatest Common Divisor
 
 Create a new file called *gcd.rs* with the following source code
 

@@ -28,7 +28,7 @@ Modify the source code so that it determines if at **least one of 3** given numb
 **Output:**  print "YES" if at least one of 3 numbers is odd and print "NO" otherwise.
 
 
-## 02-1: Ascending Integers?
+## 03-1: Ascending Integers?
 
 In Visual Studio Code, create a new file in **BranchesLoops** called *ascending_int.rs*.  Use the source code provided below as starter code in your file.
 
@@ -53,7 +53,7 @@ Modify the source code so that it determines whether 4 variables: *a*, *b*, *c*,
  **Output:** print YES if they're given in ascending order, print NO otherwise.
 
 
-## 02-2: Multiplication Table  
+## 03-2: Multiplication Table  
 In Visual Studio Code, create a new file in **BranchesLoops** called *mult_table.rs*.  Use the source code provided below as starter code in your file.
 
 ```rust
@@ -76,7 +76,7 @@ Modify the source code so that the multiplication table for the variable *number
 …
 5 x 10 = 50
 ```
-## 02-3: Divisors
+## 03-3: Divisors
 In Visual Studio Code, create a new file in **BranchesLoops** called *divisors.rs*.  Modify the starter code below so that it outputs **all the divisors** of a number given as input.
 
 ```rust
@@ -99,7 +99,7 @@ fn main() {
 Divisors of 12: 1 2 3 4 6 12
 ```
 
-## 02-4: Perfect Numbers
+## 03-4: Perfect Numbers
 In Visual Studio Code, create a new file in **BranchesLoops** called *perfect.rs*.  The **divisors** of a **perfect number** ***(except for the number itself)*** add up to the number. For example: 6 has divisors 1, 2, 3, 6 and 1 + 2 + 3 = 6. So, 6 is a perfect number. Modify the starter code so that it determines whether a number is **perfect**.
 
 ```rust

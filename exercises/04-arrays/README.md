@@ -4,7 +4,7 @@ In Visual Studio Code, create a folder called **Arrays** and then open it. Now o
 
 ## Exercises
 
-## 03-0: Student Average
+## 04-0: Student Average
 
 1.  Create a file in **Arrays** called **average.rs**.  Modify the starter code below so that it averages 8 marks given in an integer array.  You will calculate the average, by using a **for-loop**.  ***Note:  You will need to use the idea of using an accumulator that we used in grade 11 with Python.***
 2.  Output both the marks ***(all on one line)*** and the average, as shown in the example below.
@@ -40,7 +40,7 @@ Marks:  72 85 67 78 90 81 87 75
 Average:  79.4
 ```
 
-## 03-1: Reverse Output
+## 04-1: Reverse Output
 
 Create a file in **Arrays** called **reverse_output.rs**.  Modify the starter code below so that it displays the given array in reverse order.
 
@@ -62,7 +62,7 @@ For a given array: [2 5 7]
 7 5 2
 ```
 
-## 03-2: Copying Elements Array-to-Array in Reverse Order
+## 04-2: Copying Elements Array-to-Array in Reverse Order
 
 Create a file in **Arrays** called **array_copy_reverse.rs**.  Modify the source code below to copy the elements in one array into another array, but in reverse order.  
 
@@ -89,7 +89,7 @@ For the given array: [2, 8, 5, 10]
 10 5 8 2
 ```
 
-## 03-03: Maximum and Minimum Elements in an Array
+## 04-03: Maximum and Minimum Elements in an Array
 
 Create a file in **Arrays** called **max_min.rs*.  Modify the starter code below to find the maximum and minimum element in a given array of positive integers.  
 

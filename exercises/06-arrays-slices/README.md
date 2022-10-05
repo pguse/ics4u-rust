@@ -140,7 +140,7 @@ fn average() -> f64 {
 }
 ```
 
-## 06-1: Student Average - Mutable Reference
+## 06-1: Opposite - Mutable Reference
 
 Create a file in **Arrays-Slices** called **opposite.rs**.  Modify the starter code below so that it changes all the elements *(components)* of the **velocity** array to their opposites *(+ to -; - to +)*, using the **opposite()** function. Note:  You must use a **Mutable reference** as a parameter in your **opposite()** function.
 

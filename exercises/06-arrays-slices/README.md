@@ -135,7 +135,7 @@ fn main() {
 	println!("Average:  {:0.1}", average(marks));
 }
 
-fn average(m: [i32;8]) -> f64 {
+fn average() -> f64 {
     0.0
 }
 ```

@@ -16,7 +16,7 @@ fn main(){
 // Note:  A entire array is not copied
 // when the minimum() function is called.  Only
 // a  reference to the array is passed into
-// the function.
+// (borrowed by)  the function.
 fn minimum(a: &[i32]) -> i32 {
     let mut min = a[0];
     for i in 0..a.len() {

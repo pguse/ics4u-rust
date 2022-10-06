@@ -93,13 +93,14 @@ fn main() {
 }
 
 fn display(b: [char; 9]) {
-	for i in 0..b.len() {
+    for i in 0..b.len() {
         if i % 3 == 0{
             print!("\n{}  ", b[i]);
         } else {
             print!("{}  ", b[i]);
         }
-	}
+    }
+    println!();
 }
 
 fn is_win(b: [char;9]) -> bool {

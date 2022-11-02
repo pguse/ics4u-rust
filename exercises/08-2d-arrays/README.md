@@ -47,7 +47,7 @@ fn add(m: &[[i32; 3]; 3], n: &[[i32; 3]; 3]) -> [[i32; 3]; 3] {
 
 ## 08-4:  Scalar
 
-Create a function called **scalar** that multiplies every value of a 3x3 2D array **m** by the value **k**.
+Create a function called **scalar()** that multiplies every value of a 3x3 2D array **m** by the value **k**.
 
 ```rust
 fn scalar(m: &mut [[i32; 3]; 3], k: i32) {

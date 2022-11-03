@@ -28,9 +28,9 @@ The output for the above code is
 You can also create a **2D array** by writing the **rows** on **separate lines** as follows:
 
 ```rust
-let m = [   [1, 2, 3],
-	        [3, 4, 5],
-	        [6, 7, 8]];
+let m = [    [1, 2, 3],
+             [3, 4, 5],
+            [6, 7, 8]];
 
 println!(m);
 ```
@@ -169,9 +169,9 @@ produces the output
 This notation can also be used to access any number of rows or columns of a 2-dimensional array.  For example, we can access a single **row** of a 2D array as follows,
 
 ```rust
-let magic = [ [2, 7, 6],
-		    [9, 5, 1],
-		    [4, 3, 8]];
+let magic = [   [2, 7, 6],
+                [9, 5, 1],
+                [4, 3, 8]];
 
 println!("{:?}",magic[0][..]);
 ```
@@ -192,8 +192,8 @@ Assuming we are dealing with a rectangular 2D array, we can calculate the dimens
 
 ```rust
 let matrix = [  [2, 7, 6, 5],
-	            [9, 5, 1, 0],
-	            [4, 3, 8, 2]];
+                [9, 5, 1, 0],
+                [4, 3, 8, 2]];
 
 println!("# Rows: {}\n", matrix.len());
 println!("# Columns: {}", matrix[0].len());

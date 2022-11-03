@@ -28,8 +28,8 @@ The output for the above code is
 You can also create a **2D array** by writing the **rows** on **separate lines** as follows:
 
 ```rust
-let m = [    [1, 2, 3],
-             [3, 4, 5],
+let m = [   [1, 2, 3],
+            [3, 4, 5],
             [6, 7, 8]];
 
 println!(m);

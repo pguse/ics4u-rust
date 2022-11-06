@@ -16,7 +16,7 @@ A **2 dimensional array** is a representation of items in the form of **rows** a
 ```rust
 let m = [[1, 2, 3], [3, 4, 5], [6, 7, 8]];
 
-println!(m);
+println!("{:?}", m);
 ```
 
 The output for the above code is
@@ -41,7 +41,7 @@ The output is unchanged.
 An element in a **2D array** is accessed by using the **row** and **column** values as follows:
 
 ```rust
-println!(m[2][1]);
+println!("{}", m[2][1]);
 ```
 
 produces the output
@@ -58,7 +58,7 @@ A for-loop can be used to scan through the rows and columns of a 2 dimensional a
 The following code adds up the elements of a 3x3 array.
 
 ```rust
-fn total(a: [[i32;3];3) -> i32 {
+fn total(a: [[i32;3];3]) -> i32 {
 	let mut s = 0;
 	for row in 0..3 {
 		for col in 0..3 {
@@ -72,14 +72,14 @@ fn total(a: [[i32;3];3) -> i32 {
 The code above makes a copy of the array.  If you simply want to pass an **immutable reference** to the function, it would look like this,
 
 ```rust
-fn total(a: &[[i32;3]) -> i32 {
+fn total(a: &[[i32;3]]) -> i32 {
 	let mut s = 0;
 	for row in 0..3 {
 		for col in 0..3 {
 			s += a[row][col];
 		}
 	}
-	s
+    s
 }
 ```
 
@@ -93,7 +93,7 @@ You can generate a **random** array of elements by using a for-loop and the **ra
 use rand::Rng;
 
 fn main() {
-	let n = [[i32;3];3];
+	let mut n = [[0;3];3];
 
 	// Create a random 2D array with values 1->9
 	for row in 0..3 {
@@ -103,12 +103,12 @@ fn main() {
 	}
 
 	println!("{:?}", n);
-	println!("{:?}", initArray());
+	println!("{:?}", init_array());
 }
 
 // Return a random 2D array with values 1->9
-fn initArray() -> [[i32;3]; 3] {
-	let a = [[i32;3];3]];
+fn init_array() -> [[i32;3]; 3] {
+	let mut a = [[0;3];3];
 	for row in 0..3 {
 		for col in 0..3 {
 			a[row][col] = rand::thread_rng().gen_range(1..=9);
@@ -127,7 +127,7 @@ A slice of any array can be accessed using the following notation
 ```rust
 let v = [4, 5, -3, 0, 7];
 let w = &v[2..4];
-println!("{:?}, w)
+println!("{:?}", w);
 ```
 
 The output of this code is
@@ -140,8 +140,8 @@ The identifier **w** is a **slice** of array **v** from indices 2 **up to**, but
 
 ```rust
 let v = [4, 5, -3, 0, 7];
-let w = &v[2..];
-println!("{:?}",w);
+let x = &v[2..];
+println!("{:?}",x);
 ```
 
 produces the output
@@ -154,8 +154,8 @@ and
 
 ```rust
 let v = [4, 5, -3, 0, 7];
-let w = &v[..4];
-println!("{:?}",w);
+let y = &v[..4];
+println!("{:?}",y);
 ```
 
 produces the output
@@ -166,25 +166,35 @@ produces the output
 
 ## Slices of 2-Dimensional Arrays
 
-This notation can also be used to access any number of rows or columns of a 2-dimensional array.  For example, we can access a single **row** of a 2D array as follows,
+This notation can also be used to access any number of rows or columns of a 2-dimensional array.  For example, we can access the first two **rows** of a 2D array as follows,
 
 ```rust
 let magic = [   [2, 7, 6],
                 [9, 5, 1],
                 [4, 3, 8]];
 
-println!("{:?}",magic[0][..]);
+println!("{:?}",&magic[0..2]);
 ```
 
 This produces the output
 
 ```
-[2 7 6]
+[[2 7 6], [9, 5, 1]]
 ```
 
-The expression ```magic[0][..]``` creates a **slice** of the magic array consisting of **row 0** and all of its elements.  **Note:**  Using ```[..]``` creates a slice of an array from its beginning to its end _(both index values are missing)_.
+The expression ```magic[0..2]``` creates a **slice** of the magic array consisting of **row 0** and **row 1**.  **Note:**  Using ```[..]``` creates a slice of an array from its beginning to its end _(both index values are missing)_.
 
 **Note:**  We cannot access the columns of a 2D array using slices because the data is stored as an **array of arrays**, where each array represents a row.
+
+If you only want to access a single row, you can either use
+
+```
+    println!("{:?}",magic[0]);
+```
+or
+```
+    println!("{:?}",&magic[0]);
+```
 
 ## Dimensions of a 2-Dimensional Array
 

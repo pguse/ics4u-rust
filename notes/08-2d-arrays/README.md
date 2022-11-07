@@ -196,7 +196,7 @@ or
     println!("{:?}",&magic[0]);
 ```
 
-Both produced the output
+Both produce the output
 
 ```
 [2 7 6]

@@ -196,6 +196,12 @@ or
     println!("{:?}",&magic[0]);
 ```
 
+Both produced the output
+
+```
+[2 7 6]
+```
+
 ## Dimensions of a 2-Dimensional Array
 
 Assuming we are dealing with a rectangular 2D array, we can calculate the dimensions as follows,

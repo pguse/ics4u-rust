@@ -8,7 +8,7 @@ Complete the following exercises.
 
 Modify the starter code called **point_functions.rs**, in completing the following exercises.
 
-## 10-0:  Distance
+## 09-0:  Distance
 
 Complete the following function, that returns the **distance between two points**.
 
@@ -18,7 +18,7 @@ fn distance(p1: &Point, p2 &Point) -> f64 {
 }
 ```
 
-## 10-1:  Slope
+## 09-1:  Slope
 
 Complete the following function, that returns the **slope of a line passing through two points**.
 
@@ -30,7 +30,7 @@ fn slope(p1: &Point, p2: &Point) -> f64 {
 
 Modify the starter code called **fraction_methods.rs**, in completing the following exercises.
 
-## 10-2:  Divide
+## 09-2:  Divide
 
 Complete the following method, that returns the **quotient** of an **instance** of **Fraction** and another **Fraction** f.
 
@@ -40,7 +40,7 @@ fn div(self, f: &Fraction) -> Fraction {
 }
 ```
 
-## 10-3:  Add
+## 09-3:  Add
 
 Complete the following method, that returns the **sum** of an **instance** of **Fraction** and another **Fraction** f.
 
@@ -50,7 +50,7 @@ fn add(self, f: &Fraction) -> Fraction {
 }
 ```
 
-## 10-4:  Subtract
+## 09-4:  Subtract
 
 Complete the following method, that returns the **difference** of an **instance** of **Fraction** and another **Fraction** f.
 

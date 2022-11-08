@@ -2,9 +2,9 @@
 
 At this point we have used functions to organize code and primitive data types to organize data.  Now, we are going to build our own custom types to organize both code and data.
 
-## Composite Types
+## Custom Types
 
-We are going to build a **composite type** that describes student. In Rust, a custom type is called a **struct**.  A struct is made up of **fields** that may contain different types.  A **struct** definition for a **Student** would look like this
+We are going to build a **custom type** that describes student. In Rust, a custom type is called a **struct**.  A struct is made up of **fields** that may contain different types.  A **struct** definition for a **Student** would look like this
 
 ```rust
 struct Student {

@@ -196,6 +196,12 @@ or
     println!("{:?}",&magic[0]);
 ```
 
+Both produce the output
+
+```
+[2 7 6]
+```
+
 ## Dimensions of a 2-Dimensional Array
 
 Assuming we are dealing with a rectangular 2D array, we can calculate the dimensions as follows,
@@ -205,7 +211,7 @@ let matrix = [  [2, 7, 6, 5],
                 [9, 5, 1, 0],
                 [4, 3, 8, 2]];
 
-println!("# Rows: {}\n", matrix.len());
+println!("# Rows: {}", matrix.len());
 println!("# Columns: {}", matrix[0].len());
 ```
 

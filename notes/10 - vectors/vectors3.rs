@@ -5,5 +5,5 @@ fn main() {
     let w = vec![20, 25, 30];
     v.extend(w);
     println!("{:?}", v);
-    // w is moved an cannot be used anymore.  it does not exist.
+    // w is moved and cannot be used anymore.  it does not exist.
 }

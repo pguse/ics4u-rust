@@ -10,7 +10,7 @@ To create a new empty **vector**, we call the **Vec::new** function,
 let v: Vec<i32> = Vec::new();
 ```
 
-Notice that we are using a **type annotation** here (Vec<i32>) because we have started with any values in the vector.  Often, you may want to start with initial values in the **vector** and in this case it is more convenient to the the built-in ```vec!``` **macro**.  For example,
+Notice that we are using a **type annotation** here (```Vec<i32>```) because we have not started with any values in the vector.  Often, you may want to start with initial values in the **vector** and in this case it is more convenient to the the built-in ```vec!``` **macro**.  For example,
 
 ```rust
 let mut v = vec![5, 10, 15];
@@ -135,7 +135,7 @@ let mut v = vec![5, 10, 15];
 let w = vec![20, 25, 30];
 v.extend(w);
 println!("{:?}", v);
-// w is moved an cannot be used anymore.  it does not exist.
+// w is moved and cannot be used anymore.  it does not exist.
 ```
 
 produces the output,
@@ -192,7 +192,7 @@ produces the output,
 [1, 2, 3, 4, 5, 6, 7, 8]
 ```
 
-by combining **every other element** of two arrays together to a new vector.  This code only works if the two arrays have the same size.  For two different sized arrays, the following code,
+by combining **every other element** of two arrays together to form a new vector.  This code only works if the two arrays have the same size.  For two different sized arrays, the following code,
 
 ```rust
 fn main() {

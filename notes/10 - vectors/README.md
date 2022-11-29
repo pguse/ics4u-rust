@@ -231,7 +231,7 @@ produces the output,
 [1, 2, 3, 4, 5, 6, 7, 8, 9, 11, 13]
 ```
 
-Notice that **references** to the arrays ```m``` and ```n``` are passed to the **merge** function, instead of passing copies of the arrays, a new **vector** is returned.
+Notice that **references** to the arrays ```m``` and ```n``` are passed to the **merge** function, instead of passing copies of the arrays, and a new **vector** is returned.  Note:  Both arrays ```m``` and ```n``` will exist in the code after the **merge** function whether we pass a copy or a reference into the function.  This is **not the case** for **vectors**.
 
 ## Merging Vectors into a Vector
 

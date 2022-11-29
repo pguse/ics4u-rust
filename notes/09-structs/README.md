@@ -120,6 +120,8 @@ Fraction(2, 3) x Fraction(-1, 5) = Fraction(-2, 15)
 
 ### Methods
 
+Why do we create methods?  When a struct is combined with methods both the data and the associated actions on that data are grouped together.  As programs become larger this is the preferred way of organizing them.
+
 How do we define a method? Methods are defined within a block
 that starts with the impl keyword, which is short for implementation. Then we specify what we're implementing methods on, which, in this case, is the **Student** struct.   For example,
 

@@ -43,3 +43,7 @@ The **cd** command changes folders, hence it stands for 'change directory'.  If 
 If you want to move 'up' a folder into the folder that contains the current one, you use the **cd ..** command.  For example,
 
 ![Using cd..](https://github.com/pguse/ics4u-rust/blob/main/notes/00-intro/cd_dot_dot.png "Using cd..")
+
+### ↑
+
+Pressing the up arrow key on your keyboard takes you through the history of your previous commands.  This saves a lot of typing.

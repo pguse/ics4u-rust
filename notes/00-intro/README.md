@@ -1,8 +1,8 @@
 # Introduction to Rust
 
-Rust is a compiled programming language, unlike Python which is an interpreted language.  Before you run a Rust program, a compiler translates your code into the 1s and 0s that machines use.  It compiles all your code into a single _executable_ for you to run.  During this process, the Rust compiler **rustc** can catch any of your typos or syntax mistakes.
+**Rust** is a *compiled* programming language, unlike **Python** which is an *interpreted* language.  Before you run a **Rust** program, a compiler translates your code into the *(machine code)* 1s and 0s that machines use.  It compiles all your code into a single _executable_ for you to run.  During this process, the **Rust** compiler **rustc** can catch any of your typos/syntax mistakes.
 
-Here is a simple Rust program saved as **hello.rs**
+Here is a simple **Rust** program saved as **hello.rs**
 
 ```rust
 fn main() {
@@ -16,7 +16,7 @@ And here is how you would run the program on **Windows**, assuming you are curre
 
 The only difference on a **Mac** is the executable is just called **hello**, without the **.exe** file extension.
 
-In the code above, the **fn** keyword declares a function called **main()**.  The **main()** identifier is special because when you run a Rust program, it runs the code found in the **main()** function.  Without **main()**, the Rust compiler would report an error.
+In the code above, the **fn** keyword declares a function called **main()**.  The **main()** identifier is special because when you run a **Rust** program, it runs the code found in the **main()** function.  Without **main()**, the **Rust** compiler would report an error.
 
 ## Using the Terminal
 
@@ -30,7 +30,7 @@ The **ls** command lists the files and folders in the current directory.  For ex
 
 ### pwd
 
-The **pwd** command lists the current folder you are in.  Hence, it stands for 'present working directory'.  For example,
+The **pwd** command lists the current folder you are in.  Hence, it stands for **'present working directory'**.  For example,
 
 ![Using pwd](https://github.com/pguse/ics4u-rust/blob/main/notes/00-intro/pwd.png "Using pwd")
 
@@ -40,10 +40,10 @@ The **cd** command changes folders, hence it stands for 'change directory'.  If 
 
 ![Using cd](https://github.com/pguse/ics4u-rust/blob/main/notes/00-intro/cd.png "Using cd")
 
-If you want to move 'up' a folder into the folder that contains the current one, you use the **cd ..** command.  For example,
+If you want to move **'up'** a folder into the folder that contains the current one, you use the **cd ..** command.  For example,
 
 ![Using cd..](https://github.com/pguse/ics4u-rust/blob/main/notes/00-intro/cd_dot_dot.png "Using cd..")
 
 ### ↑
 
-Pressing the up arrow key on your keyboard takes you through the history of your previous commands.  This saves a lot of typing.
+Pressing the **up arrow** key on your keyboard takes you through the history of your previous commands.  This saves a lot of typing.

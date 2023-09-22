@@ -10,7 +10,7 @@ fn main() {
 }
 ```
 
-And here is how you would run the program on **Windows**,
+And here is how you would run the program on **Windows**, assuming you are currently in the folder containing the **hello.rs** file,
 
 ![Running a Rust Program](https://github.com/pguse/ics4u-rust/blob/main/notes/00-intro/hello.png "Running a Rust Program")
 

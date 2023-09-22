@@ -1,6 +1,6 @@
 # Introduction to Rust
 
-Rust is a compiled programming language, unlike Python which is an interpreted language.  Before you run a Rust program, a compiler translates your code into the 1s and 0s that machines use.  It compiles all your code into a single _executable_ for you to run.  During this process, the Rust compiler can catch any of your typos or syntax mistakes.
+Rust is a compiled programming language, unlike Python which is an interpreted language.  Before you run a Rust program, a compiler translates your code into the 1s and 0s that machines use.  It compiles all your code into a single _executable_ for you to run.  During this process, the Rust compiler **rustc** can catch any of your typos or syntax mistakes.
 
 Here is a simple Rust program
 

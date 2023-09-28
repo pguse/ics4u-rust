@@ -91,7 +91,7 @@ For the given array: [2, 8, 5, 10]
 
 ## 04-03: Maximum and Minimum Elements in an Array
 
-Create a file in **Arrays** called **max_min.rs*.  Modify the starter code below to find the maximum and minimum element in a given array of positive integers.  
+Create a file in **Arrays** called **max_min.rs**.  Modify the starter code below to find the maximum and minimum element in a given array of positive integers.  
 
 ```rust
 fn main() {

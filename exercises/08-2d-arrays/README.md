@@ -6,7 +6,7 @@ In Visual Studio Code, create a folder called **2d-arrays** and then open it. No
 
 ## 08-0:  Random Matrix
 
-Create a function called **random_matrix()** that creates a 2-dimensional array, with **3** rows and **3** columns, made up of 0's and 1's chosen randomly.  The function should return the array that gets created.
+Using **cargo**, create a new project called **random_matrix**. In **main.rs**, create a function called **random_matrix()** that creates a 2-dimensional array, with **3** rows and **3** columns, made up of 0's and 1's chosen randomly.  The function should return the array that gets created.
 
 ```rust
 fn random_matrix() ->[[i32;3];3] {

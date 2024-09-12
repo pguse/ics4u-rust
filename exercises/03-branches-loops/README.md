@@ -4,7 +4,7 @@ In Visual Studio Code, create a folder called **BranchesLoops** and then open it
 
 ## Exercises
 
-## 02-0: At Least One Odd Number?
+## 03-0: At Least One Odd Number?
 In Visual Studio Code, create a new file in **BranchesLoops** called *one_odd.rs*.  Use the source code provided below as starter code in your file.
 
 ```rust

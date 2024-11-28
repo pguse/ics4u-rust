@@ -1,15 +1,9 @@
 fn main() {
-    let marks = [80, 70, 90, 85, 75];
-    
-    println!("The average mark is: {}", average(marks));
-    println!("All marks: {:?}", marks);
+    let length = 4;
+    let width = 3;
+    println!("Area: {}", area_rectangle(length,width));
 }
 
-fn average(arr: [i32; 5]) -> i32 {
-    let mut total = 0;
-
-    for value in arr {
-        total += value;
-    }
-    total / (arr.len() as i32)
+fn area_rectangle(base: i32, height: i32) -> i32 {
+    base * height
 }

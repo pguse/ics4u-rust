@@ -1,24 +1,36 @@
 # Functions
 
-Our focus in this course is to create modular code.  One way we can accomplish this is to organize our code into functions.  Here is an example ***(see the given file - functions.rs)*** of using a function in our student information program:
+Our focus in this course is to create modular code.  One way we can accomplish this is to organize our code into functions.  Here is an example ***(see the given file - functions.rs)*** of using a function to calculate the area of a rectangle:
 
 ```rust
 fn main() {
-    let marks = [80, 70, 90, 85, 75];
-    
-    println!("The average mark is: {}", average(marks));
-    println!("All marks: {:?}", marks);
+    let length = 4;
+    let width = 3;
+    println!("Area: {}", area_rectangle(length,width));
 }
 
-fn average(arr: [i32; 5]) -> i32 {
-    let mut total = 0;
-
-    for value in arr {
-        total += value;
-    }
-    total / (arr.len() as i32)
+fn area_rectangle(base: i32, height: i32) -> i32 {
+    base * height
 }
 ```
-Notice the creation of the function:  **average**.  It has a few characteristics that need to be pointed out.  Notice that in this example there is one input **parameter** required ... an **array of _i32_ integer values of size 5** called **arr** _(declared within the parentheses)_.  Notice the **return type** ... in this case **i32** _(declared after the parentheses)_.  The value of the calculation is returned from the function without using the keyword **return**.  Rust functions **automatically** return the last value in the function. If you look in the **main** function, the **average** function acts like a variable except that an array called **marks** is passed into it and **copied** to variable **arr**.  Its return value is output using the **println!** macro.
+Notice the creation of the function:  **area_rectangle()**.  It has a few characteristics that need to be pointed out.  Notice that in this example there are two input **parameter**s required ... two  _i32_ integer values.  Notice the **return type** ... in this case **i32** _(declared after the parentheses)_.  The value of the calculation is returned from the function without using the keyword **return**.  Rust functions **automatically** return **the last value** in the function. If you look in the **main()** function, the **area_rectangle()** function acts like a variable except that two **i32** integers **length** and **width** are passed into it and **copied** to the variables **base** and **height**.  Its return value is output using the **println!()** macro.
 
-Functions can exist that do not return values.  An example is the **main** function we have been using in all our programs.  It has neither any input **parameters** provided or values returned.
+Functions can exist that do not return values.  An example is the **main()** function we have been using in all our programs.  It has neither any input **parameters** provided or values returned.  Of course, we can also create our own functions without a return value.  For example ***(see the given file - functions1.rs)***,
+
+```rust
+fn main() {
+	let faculty_info = "Paul Guse, BSc, MSc, BEd (he/him)".to_string();
+	let job_title = "Faculty - Mathematics and Computer Science".to_string();
+	signature(faculty_info, job_title);
+}
+
+  
+
+fn signature(info: String, title: String) {
+	println!("{}\n{}", info, title);
+	println!("Albert College - Belleville, Ontario");
+}
+```
+the function **signature()** takes two **parameters** of type **String** as input, and does not return any value.
+
+

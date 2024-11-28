@@ -19,7 +19,7 @@ fn random_matrix() ->[[i32;3];3] {
 Create a function called **find()** that searches for an integer **x** in a 3x3 integer array **m**.  It should return the position **(row, col)** if it finds it, otherwise it returns **(-1,-1)**.
 
 ```rust
-fn find(m: &[[i32; 3]; 3], x: i32) -> (i32,i32) {
+fn find(m: [[i32; 3]; 3], x: i32) -> (i32,i32) {
     let loc = (-1, -1);
     // Search for x using a nested loop
     loc
@@ -31,7 +31,7 @@ fn find(m: &[[i32; 3]; 3], x: i32) -> (i32,i32) {
 Create a function called **max()** that returns the maximum value in a 3x3  integer array **m**.
 
 ```rust
-fn max(m: &[[i32; 3]; 3]) -> i32 {
+fn max(m: [[i32; 3]; 3]) -> i32 {
     0
 }
 ```
@@ -41,7 +41,7 @@ fn max(m: &[[i32; 3]; 3]) -> i32 {
 Create a function called **add** that adds two 3x3 integer **2D arrays** and returns a new 2-dimensional array. **Addition of arrays** produces a new array of the same size by adding **elements** from the original arrays with the **same row and column**, and placing the **sum** in the **same position** in the new array.
 
 ```rust
-fn add(m: &[[i32; 3]; 3], n: &[[i32; 3]; 3]) -> [[i32; 3]; 3] {
+fn add(m: [[i32; 3]; 3], n: &[[i32; 3]; 3]) -> [[i32; 3]; 3] {
 }
 ```
 
@@ -50,6 +50,6 @@ fn add(m: &[[i32; 3]; 3], n: &[[i32; 3]; 3]) -> [[i32; 3]; 3] {
 Create a function called **scalar()** that multiplies every value of a 3x3 2D array **m** by the value **k**.
 
 ```rust
-fn scalar(m: &mut [[i32; 3]; 3], k: i32) {
+fn scalar(m: &mut [[i32; 3]], k: i32) {
 }
 ```

@@ -18,7 +18,7 @@ let mut v = vec![5, 10, 15];
 
 ## Adding Elements to a Vector
 
-Elements are appended to a vector by using the ```push`` method.  For example,
+Elements are appended to a vector by using the **push()** method.  For example,
 
 ```rust
 let mut v: Vec<i32> = Vec::new();
@@ -27,7 +27,7 @@ v.push(10);
 v.push(15);
 ```
 
-Notice the the vector must be made **mutable** using the keyword ```mut``, in order to change its number of elements.  The **vector** can now be displayed as we display an array using,
+Notice the the vector must be made **mutable** using the keyword **mut**, in order to change its number of elements.  The **vector** can now be displayed as we display an array using,
 
 ```rust
 println!("{:?}", v);
@@ -39,7 +39,7 @@ producing the output,
 [5, 10, 15]
 ```
 
-Similar to an **array**, we access elements of a vector using square brackets and an **index**,
+Similar to an [array](/notes/04-arrays/README.md), we access elements of a vector using square brackets and an **index**,
 
 ```rust
 println!("{}", v[1]);
@@ -274,4 +274,4 @@ It produces the same output,
 [1, 2, 3, 4, 5, 6, 7, 8, 9, 11, 13]
 ```
 
-Because **references** to the vectors were passed into the **merge** function, both vectors ```m``` and ```n``` are available after that point in the code.  They are said to have been **borrowed** by the **merge** function.  If we had passed in the actual vectors, the **rust** compiler considers them to have been **moved** into the **merge** function, and both vectors would not exist after that point in the code.
+Because **references** to the vectors were passed into the **merge()** function, both vectors ```m``` and ```n``` are available after that point in the code.  They are said to have been **borrowed** by the **merge()** function.  If we had passed in the actual vectors, the **rust** compiler considers them to have been **moved** into the **merge()** function, and both vectors would not exist after that point in the code.

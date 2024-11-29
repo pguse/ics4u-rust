@@ -20,8 +20,37 @@
               "icon": "lucide-file",
               "title": "README"
             }
+          },
+          {
+            "id": "c64f934af2c24be7",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "notes/02-functions/README.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "README"
+            }
+          },
+          {
+            "id": "dffd860326a7104b",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "notes/04-arrays/Functions.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Functions"
+            }
           }
-        ]
+        ],
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -77,7 +106,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 200
   },
   "right": {
     "id": "a0918c407ab3ed32",
@@ -162,16 +191,20 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "07d5fc8ac86d407e",
+  "active": "dffd860326a7104b",
   "lastOpenFiles": [
+    "notes/02-functions/README.md",
+    "notes/04-arrays/Functions.md",
+    "notes/04-arrays/Display-Debug-Printing.md",
+    "notes/04-arrays/README.md",
+    "notes/07-structs/README.md",
     "notes/05-vectors/README.md",
     "notes/09-tuples/README.md",
-    "notes/04-arrays/README.md",
+    "README.md",
     "exercises/08-2d-arrays/README.md",
     "exercises/08-2d-arrays/README-Guse’s Mac mini.md",
     "notes/08-2d-arrays/README.md",
     "notes/10-hashmaps/README.md",
-    "README.md",
     "notes/01-data-types/README.md",
     "notes/10-hashmaps",
     "notes/03-control-flow",
@@ -184,8 +217,6 @@
     "notes/05-vectors/vectors0.rs",
     "notes/05-vectors/vectors6.rs",
     "notes/05-vectors/vectors3.rs",
-    "notes/07-structs/README.md",
-    "notes/11-hashmap/README.md",
-    "notes/02-functions/README.md"
+    "notes/11-hashmap/README.md"
   ]
 }

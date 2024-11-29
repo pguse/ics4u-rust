@@ -41,4 +41,4 @@ The output for this is
 Midpoint of (1,6) and (-8,2): (-3.5, 4.0)
 ```
 
-Notice the **return type** of the midpoint() function and the use of `Debug` printing as with other collections such as **arrays** and **vectors**.
+Notice the **return type** of the midpoint() function and the use of `Debug` printing as with other collections such as [arrays](/notes/04-arrays/README.md) and [vectors](/notes/05-vectors/README.md).

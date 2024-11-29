@@ -1,10 +1,10 @@
 # Vectors
 
-A vector is a collection type that allows you to store more than one value in a single data structure and puts all the values next to each other in memory. Vectors can only store values of the same type. They are useful when you have a list of items, such as the lines of text in a file or the prices of items in a shopping cart.  _Unlike an array, **a vector can change its length**_.
+A vector is a collection type that allows you to store more than one value in a single data structure and puts all the values next to each other in memory. Vectors can only store values of the same type. They are useful when you have a list of items, such as the lines of text in a file or the prices of items in a shopping cart.  Unlike an [[notes/04-arrays/README|array]], **a vector can change its length**_.
 
 ## Creating a New Vector
 
-To create a new empty **vector**, we call the **Vec::new** function,
+To create a new empty **vector**, we call the **Vec::new()** function,
 
 ```rust
 let v: Vec<i32> = Vec::new();

@@ -4,16 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "f580b22ad93c7296",
+        "id": "3cfe7052d6add623",
         "type": "tabs",
         "children": [
           {
-            "id": "d7465892ec41ce89",
+            "id": "07d5fc8ac86d407e",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "notes/05-vectors/README.md",
+                "file": "notes/04-arrays/README.md",
                 "mode": "source",
                 "source": false
               },
@@ -162,11 +162,11 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "d7465892ec41ce89",
+  "active": "07d5fc8ac86d407e",
   "lastOpenFiles": [
     "notes/05-vectors/README.md",
-    "notes/04-arrays/README.md",
     "notes/09-tuples/README.md",
+    "notes/04-arrays/README.md",
     "exercises/08-2d-arrays/README.md",
     "exercises/08-2d-arrays/README-Guse’s Mac mini.md",
     "notes/08-2d-arrays/README.md",

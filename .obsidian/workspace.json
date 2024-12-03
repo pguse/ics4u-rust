@@ -8,77 +8,35 @@
         "type": "tabs",
         "children": [
           {
-            "id": "07d5fc8ac86d407e",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "notes/04-arrays/README.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "README"
-            }
-          },
-          {
-            "id": "c64f934af2c24be7",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "notes/02-functions/README.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "README"
-            }
-          },
-          {
-            "id": "dffd860326a7104b",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "notes/04-arrays/Functions-Arrays.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Functions-Arrays"
-            }
-          },
-          {
-            "id": "1043443c01ee6bb7",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "exercises/01-working-with-numbers/working-with-numbers.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "working-with-numbers"
-            }
-          },
-          {
             "id": "96d5568986cd8e99",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "notes/11-files/files.md",
+                "file": "notes/04-arrays/display-debug-printing.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "files"
+              "title": "display-debug-printing"
+            }
+          },
+          {
+            "id": "351f8854b43dbccf",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "notes/04-arrays/arrays-slices.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "arrays-slices"
             }
           }
         ],
-        "currentTab": 4
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -219,8 +177,14 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "96d5568986cd8e99",
+  "active": "351f8854b43dbccf",
   "lastOpenFiles": [
+    "exercises/06-arrays-slices/arrays-slices.md",
+    "notes/04-arrays/arrays-slices.md",
+    "notes/04-arrays/arrays.md",
+    "notes/04-arrays/display-debug-printing.md",
+    "notes/04-arrays/arrays-functions.md",
+    "notes/11-files/files.md",
     "notes/11-files/input.md",
     "README.md",
     "notes/10-hashmaps/hashmaps.md",
@@ -229,7 +193,6 @@
     "notes/07-structs/structs.md",
     "notes/06-algorithms/algorithms.md",
     "notes/05-vectors/vectors.md",
-    "notes/04-arrays/arrays.md",
     "notes/03-control-flow/control-flow.md",
     "notes/02-functions/functions.md",
     "notes/01-data-types/data-types.md",
@@ -240,15 +203,10 @@
     "exercises/03-branches-loops/branches-loops.md",
     "exercises/04-arrays/arrays.md",
     "exercises/05-arrays-functions/arrays-functions.md",
-    "exercises/06-arrays-slices/arrays-slices.md",
     "exercises/07-algorithms-search/algorithms-search.md",
     "exercises/08-2d-arrays/2d-arrays.md",
-    "exercises/09-vectors/vectors.md",
-    "exercises/10-structs/structs.md",
     "exercises/11-files",
-    "notes/11-files/files.md",
     "notes/11-files/input.txt",
-    "notes/04-arrays/Functions-Arrays.md",
     "notes/11-files",
     "notes/10-hashmaps",
     "notes/03-control-flow",

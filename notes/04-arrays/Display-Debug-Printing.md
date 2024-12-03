@@ -47,6 +47,6 @@ There are three ways to print:
 
 ### Pretty Print
 
-We haven't talked about this yet.  It will come up when we talk about the [struct](/notes/07-structs/README.md) type.
+We haven't talked about this yet.  It will come up when we talk about the [struct](notes/07-structs/structs.md) type.
 
 - `{:#?}` - `Debug` print, but pretty. Pretty means that each part of a type is printed on its own line to make it easier to read.

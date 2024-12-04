@@ -1,6 +1,6 @@
 # HashMap
 
-A `HashMap` is a collection _(we have seen two other collections:  Arrays and Vectors)_ that consists of **keys**, and **values**. Each **key** is associated with a single **value**. The association of a **key** and a **value** is called a **key-value pair**.  Unlike an **array**, the **keys** can be of any type.  Hence, whereas an **array** is an ordered collection of data, a `HashMap` is a **mapping** from **keys** to **values** - there is **no inherent order** to the data.
+A `HashMap` is a collection _(we have seen two other collections:  [arrays](notes/04-arrays/arrays.md) and [vectors](notes/05-vectors/vectors.md))_ that consists of **keys**, and **values**. Each **key** is associated with a single **value**. The association of a **key** and a **value** is called a **key-value pair**.  Unlike an **array**, the **keys** can be of any type.  Hence, whereas an **array** is an ordered collection of data, a `HashMap` is a **mapping** from **keys** to **values** - there is **no inherent order** to the data.
 
 Below, you can see an example of how to create a `HashMap` using the **province-captial** information from Canada. Notice that, unlike the **array** and **vector** collections, you must import the `HashMap` **struct** from the standard library
 
@@ -29,7 +29,7 @@ fn main() {
 	}
 }
 ```
-Here a new `HashMap` has been created using the **HashMap::new()** command.  New **key-value** pairs are added to the `HashMap` using the **insert()** method.  Unlike an **array** or **vector**, the **key-value** pairs are **not saved in any order**.  You can demonstrate this by running the code above multiple times. Notice how the the **key-value** pairs can be acessing using a **for-loop**.
+Here a new `HashMap` has been created using the **HashMap::new()** command.  New **key-value** pairs are added to the `HashMap` using the **insert()** method.  Unlike an **array** or **vector**, the **key-value** pairs are **not saved in any order**.  You can demonstrate this by running the code above multiple times. Notice how the the **key-value** pairs can be accessed using a **for-loop**.
 ## Accessing a value
 
 In order to access a value, you can simply use provide the **key** to the `HashMap` as follows:

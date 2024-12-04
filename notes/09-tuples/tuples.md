@@ -1,6 +1,6 @@
 # Tuples
 
-In Rust, a `tuple` is a **collection** of values of **different types** grouped together, in contrast to an [array](/notes/04-arrays/README.md) or [vector](notes/05-vectors/vectors.md) that groups the values of the **same type**. Tuples are useful for returning multiple values from a function or grouping related values without creating a custom **struct**. Each element in a tuple **can be of a different type**, and they are accessed by their position within the tuple.
+In Rust, a `tuple` is a **collection** of values of **different types** grouped together, in contrast to an [array](/notes/04-arrays/arrays.md) or [vector](notes/05-vectors/vectors.md) that groups the values of the **same type**. Tuples are useful for returning multiple values from a function or grouping related values without creating a custom **struct**. Each element in a tuple **can be of a different type**, and they are accessed by their position within the tuple.
 
 Here's an example of a `tuple` in Rust:
 
@@ -41,4 +41,4 @@ The output for this is
 Midpoint of (1,6) and (-8,2): (-3.5, 4.0)
 ```
 
-Notice the **return type** of the midpoint() function and the use of `Debug` printing as with other collections such as [arrays](/notes/04-arrays/README.md) and [vectors](notes/05-vectors/vectors.md).
+Notice the **return type** of the `midpoint()` function and the use of `Debug` printing as with other collections such as [arrays](/notes/04-arrays/arrays.md) and [vectors](notes/05-vectors/vectors.md).

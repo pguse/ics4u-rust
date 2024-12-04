@@ -25,6 +25,6 @@ The average mark is 80
 All marks: [80, 70, 90, 85, 75]
 ```
 
-Notice in the **average()** function that the [array](/notes/04-arrays/README.md) type includes **both the type of elements and the number of elements**.  The problem with this requirement is that the function can only use an array of 5 elements, which is not the most useful function, as we would rather be able to calculate the average value of an array of any number of elements.
+Notice in the **average()** function that the [array](/notes/04-arrays/arrays.md) type includes **both the type of elements and the number of elements**.  The problem with this requirement is that the function can only use an array of 5 elements, which is not the most useful function, as we would rather be able to calculate the average value of an array of any number of elements.
 
 Note:  In this version of the **average()** function a separate **copy** of the array is created inside the function. In the **main()** function the array is bound to the name `my_marks`, while in the **average()** function a separate copy of the array is bound to the name `marks`.

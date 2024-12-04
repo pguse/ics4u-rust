@@ -1,6 +1,6 @@
 # Vectors
 
-A vector is a collection type that allows you to store more than one value in a single data structure and puts all the values next to each other in memory. Vectors can only store values of the same type. They are useful when you have a list of items, such as the lines of text in a file or the prices of items in a shopping cart.  Unlike an [array](/notes/04-arrays/README.md), **a vector can change its length**_.
+A vector is a collection type that allows you to store more than one value in a single data structure and puts all the values next to each other in memory. Vectors can only store values of the same type. They are useful when you have a list of items, such as the lines of text in a file or the prices of items in a shopping cart.  Unlike an [array](/notes/04-arrays/arrays.md), **a vector can change its length**_.
 
 ## Creating a New Vector
 
@@ -104,7 +104,27 @@ Notice how ```a``` remains unchanged and how we passed in a slice _(using the re
 
 Sometimes we want to combine vectors together.  There are a number of ways to do this.
 
-### Method #1: append
+### Method #1: concat()
+
+The following [code](https://play.rust-lang.org/?version=stable&mode=debug&edition=2021&gist=3ea40e77f575a8d9fe437a5fc01ed24c)
+
+```rust
+fn main() {
+	let a = vec![1, 2, 3, 4];
+	let b = vec![5, 4, 3, 2, 1];
+	let c = [a, b].concat();
+	println!("{:?}", c);
+}
+```
+
+uses the `concat()` method to concatenate _(stick together)_ two vectors to form a third vector
+
+```
+[1, 2, 3, 4, 5, 4, 3, 2, 1]
+```
+
+You can concatenate as many vectors as you want with the `concat()` method.
+### Method #2: append
 
 The following code,
 
@@ -126,7 +146,7 @@ produces the output,
 
 Vector ```w``` is appended to vector ```v```, and in the process ```w``` is emptied.  Notice how both vectors are **mutable** and a **mutable reference** ```&mut``` has been passed to the ```append``` method.
 
-### Method #2: extend (moving)
+### Method #3: extend (moving)
 
 The following code,
 
@@ -146,7 +166,7 @@ produces the output,
 
 Vector ```w``` is appended to vector ```v```, and in the process ```w``` is **moved into** the ```extend``` method. The vector ```w``` no longer exists after that point.  Notice how only vector ```v``` needs to be **mutable** and the vector ```w``` has been passed _(or moved)_ to the ```extend``` method.
 
-### Method #3: extend (borrowing)
+### Method #4: extend (borrowing)
 
 The following code,
 

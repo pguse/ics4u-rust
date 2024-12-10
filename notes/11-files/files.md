@@ -19,7 +19,7 @@ fn read_file(file_path: &str) -> String {
 }
 
 fn main() {
-    let file_path = "src/input.txt";
+    let file_path = "src/input.md";
     let data = read_file(file_path);
     println!("{}", data);
 }

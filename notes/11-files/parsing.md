@@ -32,7 +32,7 @@ uses the `split()` method to produce an iterator, which then needs the `collect(
 ["English 85", "Science 80", "History 90", "Geography 75"]
 ```
 
-Now we may want to **parse** each String in the  [vector](notes/05-vectors/vectors.md).  For example, the following
+Now we may want to **parse** each String in the  [vector](notes/05-vectors/vectors.md).  For example, the following [code](https://play.rust-lang.org/?version=stable&mode=debug&edition=2021&gist=67261cc12253ae60427a712202cc550e)
 
 ```rust
 fn main() {
@@ -42,7 +42,7 @@ fn main() {
 }
 ```
 
-code uses the `split()` method to separate a **String** according the a single whitespace character, producing the output,
+uses the `split()` method to separate a **String** according the a single whitespace character, producing the output,
 
 ```
 ["English", "85"]

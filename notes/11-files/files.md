@@ -28,5 +28,3 @@ fn main() {
 In this example:
 - `File::open(file_path) opens the file at the specified path` or returns an error if the file is not found.
 - `file.read_to_string(&mut contents) reads the file's contents into a String` or returns an error if the file cannot be read.
-
-This should help you get started with reading text files in Rust. If you have any specific requirements or run into issues, feel free to ask!

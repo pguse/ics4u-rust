@@ -39,7 +39,7 @@ Doubled: [2, 4, 6, 8, 10]
 In this example:
 - `numbers` is a vector containing the elements `[1, 2, 3, 4, 5]`.
 - the `iter()` method is used to change the `numbers` vector into an iterator so that `map()` can be applied to it.
-- `map(|x| x * 2)` creates a new iterator where each element is doubled.
+- `map(|&x| x * 2)` creates a new iterator where each element is doubled.
 - `collect()` is used to gather the transformed elements into a new vector called `doubled`.
 
 The `map()` method is part of Rust's iterator trait and is useful for a wide range of transformations.
@@ -84,7 +84,7 @@ Even: [2, 4, 6, 8, 10]
 
 In this example:
 - `numbers.iter()` creates an iterator over the vector `numbers`.
-- `filter(|&&x| x % 2 == 0)` applies a condition to each element, keeping only the even numbers.
+- `filter(|&x| x % 2 == 0)` applies a condition to each element, keeping only the even numbers.
 - `collect()` gathers the filtered elements into a new vector called `even_numbers`.
 
 ### Key Points

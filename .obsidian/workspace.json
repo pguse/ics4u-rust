@@ -69,7 +69,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "notes/13 - map-filter/map-filter.md",
+                "file": "notes/12-iterators/map-filter.md",
                 "mode": "source",
                 "source": false
               },
@@ -83,16 +83,30 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "notes/11-files/parsing.md",
+                "file": "exercises/10-structs/structs.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "parsing"
+              "title": "structs"
+            }
+          },
+          {
+            "id": "8039643ae641fcf7",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "exercises/12-iterators/iterators.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "iterators"
             }
           }
         ],
-        "currentTab": 5
+        "currentTab": 6
       }
     ],
     "direction": "vertical"
@@ -233,27 +247,29 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "7c7a25fea501389d",
+  "active": "8039643ae641fcf7",
   "lastOpenFiles": [
-    "notes/13 - map-filter/map-filter.md",
+    "exercises/10-structs/structs.md",
+    "exercises/12-iterators/iterators.md",
+    "notes/12-iterators/map-filter.md",
+    "exercises/12-iterators",
+    "notes/12-iterators/iterators.md",
     "notes/11-files/parsing.md",
     "notes/10-hashmaps/hashmaps.md",
     "notes/09-tuples/tuples.md",
     "notes/11-files/input.md",
     "notes/11-files/files.md",
-    "notes/12 - iterators/iterators.md",
     "notes/13 - map-filter/next.md",
     "README.md",
     "notes/13 - map-filter",
     "notes/05-vectors/vectors.md",
     "notes/07-structs/structs.md",
-    "notes/12 - iterators",
+    "notes/12-iterators",
     "notes/06-algorithms/algorithms.md",
     "notes/04-arrays/arrays.md",
     "notes/04-arrays/arrays-functions.md",
     "exercises/11-files/files.md",
     "exercises/11-files/input.md",
-    "exercises/10-structs/structs.md",
     "notes/08-2d-arrays/2d-arrays.md",
     "notes/04-arrays/README.md",
     "notes/04-arrays/display-debug-printing.md",
@@ -262,14 +278,12 @@
     "notes/02-functions/functions.md",
     "notes/01-data-types/data-types.md",
     "notes/00-intro/intro.md",
-    "exercises/01-working-with-numbers/working-with-numbers.md",
     "exercises/11-files",
     "notes/11-files/input.txt",
     "notes/11-files",
     "notes/10-hashmaps",
     "notes/03-control-flow",
     "notes/04-arrays",
-    "notes/06-algorithms",
-    "notes/05-vectors/vectors5.rs"
+    "notes/06-algorithms"
   ]
 }

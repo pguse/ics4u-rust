@@ -22,7 +22,7 @@ fn main() {
     let numbers = vec![1, 2, 3, 4, 5];
 
     // Use map() to create a new iterator where each element is doubled
-    let doubled: Vec<_> = numbers.iter().map(|&x| x * 2).collect();
+    let doubled: Vec<i32> = numbers.iter().map(|&x| x * 2).collect();
 
     println!("Original: {:?}", numbers);
     println!("Doubled: {:?}", doubled);

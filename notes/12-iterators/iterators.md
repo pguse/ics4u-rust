@@ -80,3 +80,40 @@ with the output
 ```
 
 This would be useful when creating a  [vector](notes/05-vectors/vectors.md) of many numbers with the need of a **for-loop**.
+
+We can also create a  [vector](notes/05-vectors/vectors.md) from a string by using the `split()` [method](https://doc.rust-lang.org/std/string/struct.String.html#method.split).  For example, the following [code](https://play.rust-lang.org/?version=stable&mode=debug&edition=2021&gist=874a264aee15e85d0353ad5371e87460)
+
+```rust
+fn main() {
+	let string = "10 20 30 40 50";
+	let strings: Vec<&str> = values.split(" ").collect();
+	println!(":?", values);
+}
+```
+
+uses the `split()` [method](https://doc.rust-lang.org/std/string/struct.String.html#method.split) on a string, with a single space `" "` acting as the separator, to create a vector of strings. The output is
+
+```
+["10", "20", "30", "40", "50"]
+```
+
+The `split()` method method returns an iterator that is then converted to a [vector](notes/05-vectors/vectors.md) collection using the `collect()` method.  Notice, again the explicit **type annotation**.
+
+Let's say, we were prefer this collection to be a vector of `i32` values.  We can achieve this without a `for-loop` by using the [`map()`](notes/12-iterators/map-filter.md) method that is implemented for **iterators**. For example, the following [code](https://play.rust-lang.org/?version=stable&mode=debug&edition=2021&gist=99463badd011f0a92829fdda42dbc97b),
+
+```rust
+fn main() {
+    let strings = vec!["10", "20", "30", "40", "50"];
+    // Use map() to parse each string into an i32
+    let numbers: Vec<i32> = strings.iter()
+                                   .map(|s| s.parse().unwrap())
+                                   .collect();
+    println!("{:?}", numbers);
+}
+```
+
+produces the following output,
+
+```
+[10, 20, 30, 40, 50]
+```

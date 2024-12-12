@@ -1,4 +1,6 @@
-# Parsing Strings - split() method
+# Parsing Strings
+
+## split() method
 
 We often need to take a **String** and extract information from it, whether it be sub-strings or numerical values. This is often done using the [`split()`](https://doc.rust-lang.org/std/string/struct.String.html) method that is part of the **String** type. Here is an [example](https://play.rust-lang.org/?version=stable&mode=debug&edition=2021&gist=ec2e4937f89e76ff06b1ab8952fcab70) ,
 
@@ -46,4 +48,38 @@ uses the `split()` method to separate a **String** according the a single whites
 
 ```
 ["English", "85"]
+```
+
+## parse() method
+
+The `parse()` method can be used in a couple different ways in Rust.  For example, in the following [code](https://play.rust-lang.org/?version=stable&mode=debug&edition=2021&gist=290c91667997e22d712f889971d7681e),
+
+```rust
+fn main() {
+    let data = "2024";
+    let n: i32 = data.parse().unwrap();
+    println!("{}", n);
+}
+```
+
+produces the output
+
+```
+2024
+```
+
+In Rust, the `parse()` method is used to convert a string into another type. The type that `parse()` returns is determined by the type you specify. It returns a `Result` type, which is either `Ok(T)` if the parsing was successful, or `Err(E)` if there was an error. The `unwrap()` method is used to extract the value inside the `Result` type, assuming that the value is present and not an error.  In the example above, an explicit **type annotation** is used to indicate the type we want `parse()` to produce,
+
+```rust
+let n: i32 = data.parse().unwrap();
+```
+
+You can also use the `parse()` method like [this](https://play.rust-lang.org/?version=stable&mode=debug&edition=2021&gist=ccd3785fec96475e51c9e3fb6fce4efb)without an explicit **type annotation**,
+
+```rust
+fn main() {
+    let data = "2024";
+    let n = data.parse::<i32>().unwrap();
+    println!("{}", n);
+}
 ```

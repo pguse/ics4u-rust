@@ -54,7 +54,11 @@ To run the code above, see the given file - **hashmaps.rs**.
 
 ## Using a HashMap as a Counter
 
-You often use a `HashMap` to keep track of the number of occurrences of some type of data.  For example ***(see the given file - hashmaps1.rs)***, if we wanted to count the number of emojis in the following string
+You often use a `HashMap` to keep track of the number of occurrences of some type of data.
+
+#### Example 1:
+
+For [example](https://play.rust-lang.org/?version=stable&mode=debug&edition=2021&gist=f04cef9097aa5235f702ad0afc428617), if we wanted to count the number of emojis in the following string
 
 ```rust
 let text = "👽😊🍟😊👽😺👽".to_string();
@@ -88,4 +92,33 @@ The output will look something like
 ```
 👽: 3
 {'😺': 1, '👽': 3, '😊': 2, '🍟': 1}
+```
+
+#### Example 2:
+
+Here is another [example](https://play.rust-lang.org/?version=stable&mode=debug&edition=2021&gist=9a84cc7264e0ef8ea6a7cb15b9c632a2), where we want to count the number of letters _(notice the use of the `to_lowercase()` method)_  in a string,
+
+```rust
+use std::collections::HashMap;
+
+fn main() {
+    let mut counter = HashMap::new();
+    let text = "Welcome to Albert College!";
+
+    for c in text.to_lowercase().chars() {
+        if counter.contains_key(&c) {
+            counter.insert(c, counter[&c] + 1);
+        } else {
+            counter.insert(c, 1);
+        }
+    }
+
+    println!("{:?}", counter);
+}
+```
+
+producing the output,
+
+```
+{'e': 5, 'l': 4, 'm': 1, 'c': 2, ' ': 3, 'o': 3, 't': 2, 'a': 1, 'b': 1, 'g': 1, 'r': 1, '!': 1, 'w': 1}
 ```

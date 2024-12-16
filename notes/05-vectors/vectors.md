@@ -39,7 +39,7 @@ producing the output,
 [5, 10, 15]
 ```
 
-Similar to an [array](/notes/04-arrays/README.md), we access elements of a vector using square brackets and an **index**,
+Similar to an [array](/notes/04-arrays/arrays.md), we access elements of a vector using square brackets and an **index**,
 
 ```rust
 println!("{}", v[1]);

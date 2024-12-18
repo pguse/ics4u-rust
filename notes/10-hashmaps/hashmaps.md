@@ -2,7 +2,7 @@
 
 A [`HashMap`](https://doc.rust-lang.org/std/collections/struct.HashMap.html) is a collection _(we have seen two other collections:  [arrays](notes/04-arrays/arrays.md) and [vectors](notes/05-vectors/vectors.md))_ that consists of **keys**, and **values**. Each **key** is associated with a single **value**. The association of a **key** and a **value** is called a **key-value pair**.  Unlike an **array**, the **keys** can be of any type.  Hence, whereas an **array** is an ordered collection of data, a `HashMap` is a **mapping** from **keys** to **values** - there is **no inherent order** to the data.
 
-Below, you can see an example of how to create a `HashMap` using the **province-captial** information from Canada. Notice that, unlike the **array** and **vector** collections, you must import the `HashMap` **struct** from the standard library
+Below, you can see an [example](https://play.rust-lang.org/?version=stable&mode=debug&edition=2021&gist=0a0e1f20985a5e7c0ff4998f64c4d625) of how to create a `HashMap` using the **province-captial** information from Canada. Notice that, unlike the **array** and **vector** collections, you must import the `HashMap` **struct** from the standard library
 
 ```rust
 use std::collections::HashMap;
@@ -171,4 +171,4 @@ The `entry()` method returns an `Entry` [enum](/notes/13-enums/enums.md), which 
     
 - `or_insert(0)`: If the entry is vacant (i.e., the letter is not yet in the `HashMap`), this inserts the letter with a value of `0` and returns a **mutable reference to the value** called `count`. If the entry is occupied, it returns a **mutable reference to the existing value** called `count`.
     
-- `*count += 1`: This increments the value for the letter, effectively counting its occurrences. Since `count` is a **mutable reference** to the value, it must be **dereferenced** using the `*` before its value can be updated.
+- `*count += 1`: This increments the value for the letter, effectively counting its occurrences. Since `count` is a **mutable reference  to the value**, it must be **dereferenced** using the `*` before its value can be updated.

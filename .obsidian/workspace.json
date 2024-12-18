@@ -48,9 +48,23 @@
               "icon": "lucide-file",
               "title": "hashmaps"
             }
+          },
+          {
+            "id": "bc5d08cb12791a49",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "notes/10-hashmaps/hashmaps.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "hashmaps"
+            }
           }
         ],
-        "currentTab": 2
+        "currentTab": 3
       }
     ],
     "direction": "vertical"
@@ -191,10 +205,12 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "6dd1c2bb94d7c55b",
+  "active": "bc5d08cb12791a49",
   "lastOpenFiles": [
-    "notes/04-arrays/arrays.md",
+    "notes/13-enums/enums.md",
     "notes/10-hashmaps/hashmaps.md",
+    "notes/13-enums",
+    "notes/04-arrays/arrays.md",
     "notes/09-tuples/tuples.md",
     "exercises/13-hashmaps/hashmaps.md",
     "notes/11-files/files.md",
@@ -223,12 +239,10 @@
     "notes/08-2d-arrays/2d-arrays.md",
     "notes/04-arrays/arrays-slices.md",
     "notes/03-control-flow/control-flow.md",
-    "notes/02-functions/functions.md",
     "exercises/11-files",
     "notes/11-files/input.txt",
     "notes/11-files",
     "notes/10-hashmaps",
-    "notes/03-control-flow",
-    "notes/04-arrays"
+    "notes/03-control-flow"
   ]
 }

@@ -1,6 +1,6 @@
 # HashMap
 
-A `HashMap` is a collection _(we have seen two other collections:  [arrays](notes/04-arrays/arrays.md) and [vectors](notes/05-vectors/vectors.md))_ that consists of **keys**, and **values**. Each **key** is associated with a single **value**. The association of a **key** and a **value** is called a **key-value pair**.  Unlike an **array**, the **keys** can be of any type.  Hence, whereas an **array** is an ordered collection of data, a `HashMap` is a **mapping** from **keys** to **values** - there is **no inherent order** to the data.
+A [`HashMap`](https://doc.rust-lang.org/std/collections/struct.HashMap.html) is a collection _(we have seen two other collections:  [arrays](notes/04-arrays/arrays.md) and [vectors](notes/05-vectors/vectors.md))_ that consists of **keys**, and **values**. Each **key** is associated with a single **value**. The association of a **key** and a **value** is called a **key-value pair**.  Unlike an **array**, the **keys** can be of any type.  Hence, whereas an **array** is an ordered collection of data, a `HashMap` is a **mapping** from **keys** to **values** - there is **no inherent order** to the data.
 
 Below, you can see an example of how to create a `HashMap` using the **province-captial** information from Canada. Notice that, unlike the **array** and **vector** collections, you must import the `HashMap` **struct** from the standard library
 
@@ -63,7 +63,9 @@ let map = HashMap::from([
         ('z', 10),
     ]);
 ```
-## Accessing a value
+## Methods
+
+### Accessing a value
 
 In order to access a value, you can simply use provide the **key** to the `HashMap` as follows:
 
@@ -77,7 +79,15 @@ You can also use the **get()** method by providing it a **key**. Because it is p
         println!("Capital of Nunavut: {}", capital);
     }
 ```
-## Removing an entry
+
+or, if we are confident that the `key` exists we can just use the `unwrap()` method as [follows](https://play.rust-lang.org/?version=stable&mode=debug&edition=2021&gist=4db396ddcec7763e83fa2e45e0c659a9)
+
+
+```rust
+capital = capitals.get("Nunavut").unwrap();
+println!("Capital: {}", capital);
+```
+### Removing an entry
 
 To remove an entry, we use the **remove()** method by providing it a **key** as follows:
 ```rust
@@ -127,9 +137,9 @@ The output will look something like
 {'😺': 1, '👽': 3, '😊': 2, '🍟': 1}
 ```
 
-#### Example 2:
+#### Example 2:  Using the entry() method
 
-Here is another [example](https://play.rust-lang.org/?version=stable&mode=debug&edition=2021&gist=9a84cc7264e0ef8ea6a7cb15b9c632a2), where we want to count the number of letters _(notice the use of the `to_lowercase()` method)_  in a string,
+Here is another [example](https://play.rust-lang.org/?version=stable&mode=debug&edition=2021&gist=73b2130879738f9e8220777b267eb396), where we want to count the number of letters _(notice the use of the `to_lowercase()` method)_  in a string,
 
 ```rust
 use std::collections::HashMap;
@@ -139,11 +149,8 @@ fn main() {
     let text = "Welcome to Albert College!";
 
     for c in text.to_lowercase().chars() {
-        if counter.contains_key(&c) {
-            counter.insert(c, counter[&c] + 1);
-        } else {
-            counter.insert(c, 1);
-        }
+        let count = text.entry(c).or_insert(0);
+        *count += 1;
     }
 
     println!("{:?}", counter);
@@ -153,5 +160,15 @@ fn main() {
 producing the output,
 
 ```
-{'e': 5, 'l': 4, 'm': 1, 'c': 2, ' ': 3, 'o': 3, 't': 2, 'a': 1, 'b': 1, 'g': 1, 'r': 1, '!': 1, 'w': 1}
+{'w': 1, 'e': 5, 'o': 3, 't': 2, 'r': 1, 'g': 1, 'l': 4, 'm': 1, ' ': 3, 'a': 1, '!': 1, 'b': 1, 'c': 2}
 ```
+
+Notice the use of the `entry()` method.  The `entry()` method in Rust's `HashMap` is a powerful tool for **modifying the value of a key** or **inserting a new key-value** pair if the key does not exist. It provides more control over how you interact with the `HashMap`, especially useful for tasks like updating counters or conditional insertion.
+
+The `entry()` method returns an `Entry` [enum](/notes/13-enums/enums.md), which represents either an occupied entry (`OccupiedEntry`) or a vacant entry (`VacantEntry`). You can then use methods like `or_insert()`, `or_insert_with()`, or manipulate the entry directly.  In the  [example](https://play.rust-lang.org/?version=stable&mode=debug&edition=2021&gist=73b2130879738f9e8220777b267eb396) above,
+
+- `entry(c)`: This creates an entry for the letter _(char)_ in the `HashMap`. If the letter exists, it returns an `OccupiedEntry`; if it doesn't, it returns a `VacantEntry`.
+    
+- `or_insert(0)`: If the entry is vacant (i.e., the letter is not yet in the `HashMap`), this inserts the letter with a value of `0` and returns a **mutable reference to the value** called `count`. If the entry is occupied, it returns a **mutable reference to the existing value** called `count`.
+    
+- `*count += 1`: This increments the value for the letter, effectively counting its occurrences. Since `count` is a **mutable reference** to the value, it must be **dereferenced** using the `*` before its value can be updated.

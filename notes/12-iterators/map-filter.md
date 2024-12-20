@@ -22,7 +22,7 @@ fn main() {
     let numbers = vec![1, 2, 3, 4, 5];
 
     // Use map() to create a new iterator where each element is doubled
-    let doubled: Vec<i32> = numbers.iter().map(|&x| x * 2).collect();
+    let doubled: Vec<i32> = numbers.iter().map(|x| x * 2).collect();
 
     println!("Original: {:?}", numbers);
     println!("Doubled: {:?}", doubled);
@@ -39,7 +39,7 @@ Doubled: [2, 4, 6, 8, 10]
 In this example:
 - `numbers` is a vector containing the elements `[1, 2, 3, 4, 5]`.
 - the `iter()` method is used to change the `numbers` vector into an iterator so that `map()` can be applied to it.
-- `map(|&x| x * 2)` creates a new iterator where each element is doubled.
+- `map(|x| x * 2)` creates a new iterator where each element is doubled.
 - `collect()` is used to gather the transformed elements into a new vector called `doubled`.
 
 The `map()` method is part of Rust's iterator trait and is useful for a wide range of transformations.

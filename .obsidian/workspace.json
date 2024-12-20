@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "notes/12-iterators/iterators.md",
+                "file": "notes/12-iterators/map-filter.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "iterators"
+              "title": "map-filter"
             }
           }
         ]
@@ -164,8 +164,8 @@
   },
   "active": "bc5d08cb12791a49",
   "lastOpenFiles": [
-    "notes/12-iterators/map-filter.md",
     "notes/12-iterators/iterators.md",
+    "notes/12-iterators/map-filter.md",
     "notes/10-hashmaps/hashmaps.md",
     "notes/04-arrays/display-debug-printing.md",
     "notes/11-files/files.md",

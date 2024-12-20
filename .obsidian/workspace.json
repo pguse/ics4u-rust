@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "notes/10-hashmaps/hashmaps.md",
+                "file": "notes/12-iterators/iterators.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "hashmaps"
+              "title": "iterators"
             }
           }
         ]
@@ -164,9 +164,11 @@
   },
   "active": "bc5d08cb12791a49",
   "lastOpenFiles": [
+    "notes/12-iterators/map-filter.md",
+    "notes/12-iterators/iterators.md",
+    "notes/10-hashmaps/hashmaps.md",
     "notes/04-arrays/display-debug-printing.md",
     "notes/11-files/files.md",
-    "notes/10-hashmaps/hashmaps.md",
     "notes/13-enums/enums.md",
     "notes/13-enums",
     "notes/04-arrays/arrays.md",
@@ -178,10 +180,8 @@
     "Untitled.canvas",
     "notes/05-vectors/vectors.md",
     "notes/11-files/parsing.md",
-    "notes/12-iterators/map-filter.md",
     "exercises/10-structs/structs.md",
     "notes/04-arrays/README.md",
-    "notes/12-iterators/iterators.md",
     "notes/11-files/input.md",
     "exercises/12-iterators/iterators-map-filter.md",
     "exercises/12-iterators",

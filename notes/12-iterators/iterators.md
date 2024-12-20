@@ -99,7 +99,7 @@ uses the `split()` [method](https://doc.rust-lang.org/std/string/struct.String.h
 
 The `split()` method method returns an iterator that is then converted to a [vector](notes/05-vectors/vectors.md) collection using the `collect()` method.  Notice, again the explicit **type annotation**.
 
-Let's say, we were prefer this collection to be a vector of `i32` values.  We can achieve this without a `for-loop` by using the [`map()`](notes/12-iterators/map-filter.md) method that is implemented for **iterators**. For example, the following [code](https://play.rust-lang.org/?version=stable&mode=debug&edition=2021&gist=99463badd011f0a92829fdda42dbc97b),
+Let's say, we were prefer this collection to be a vector of `i32` values.  We can achieve this without a `for-loop` by using the [`map()`](/notes/12-iterators/map-filter.md) method that is implemented for **iterators**. For example, the following [code](https://play.rust-lang.org/?version=stable&mode=debug&edition=2021&gist=99463badd011f0a92829fdda42dbc97b),
 
 ```rust
 fn main() {

@@ -13,15 +13,30 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "notes/12-iterators/map-filter.md",
+                "file": "exercises/10-structs/structs.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "map-filter"
+              "title": "structs"
+            }
+          },
+          {
+            "id": "14d70d8afeb26a82",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "notes/13-enums/enums.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "enums"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -162,32 +177,34 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "bc5d08cb12791a49",
+  "active": "14d70d8afeb26a82",
   "lastOpenFiles": [
+    "README.md",
+    "exercises/14-enums/enums.md.md",
+    "notes/13-enums/enums.md",
+    "notes/07-structs/structs.md",
+    "exercises/10-structs/structs.md",
+    "exercises/14-enums",
     "notes/12-iterators/iterators.md",
     "notes/12-iterators/map-filter.md",
     "notes/10-hashmaps/hashmaps.md",
     "notes/04-arrays/display-debug-printing.md",
     "notes/11-files/files.md",
-    "notes/13-enums/enums.md",
     "notes/13-enums",
     "notes/04-arrays/arrays.md",
     "notes/09-tuples/tuples.md",
     "exercises/13-hashmaps/hashmaps.md",
-    "README.md",
     "exercises/13-hashmaps/emma.md",
     "exercises/13-hashmaps",
     "Untitled.canvas",
     "notes/05-vectors/vectors.md",
     "notes/11-files/parsing.md",
-    "exercises/10-structs/structs.md",
     "notes/04-arrays/README.md",
     "notes/11-files/input.md",
     "exercises/12-iterators/iterators-map-filter.md",
     "exercises/12-iterators",
     "notes/13 - map-filter/next.md",
     "notes/13 - map-filter",
-    "notes/07-structs/structs.md",
     "notes/12-iterators",
     "notes/06-algorithms/algorithms.md",
     "notes/04-arrays/arrays-functions.md",
@@ -195,11 +212,9 @@
     "exercises/11-files/input.md",
     "notes/08-2d-arrays/2d-arrays.md",
     "notes/04-arrays/arrays-slices.md",
-    "notes/03-control-flow/control-flow.md",
     "exercises/11-files",
     "notes/11-files/input.txt",
     "notes/11-files",
-    "notes/10-hashmaps",
-    "notes/03-control-flow"
+    "notes/10-hashmaps"
   ]
 }

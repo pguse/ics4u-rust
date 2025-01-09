@@ -27,7 +27,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "notes/13-enums/enums.md",
+                "file": "exercises/14-enums/enums.md",
                 "mode": "source",
                 "source": false
               },
@@ -177,11 +177,11 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "14d70d8afeb26a82",
+  "active": "c7d496468c507d53",
   "lastOpenFiles": [
-    "README.md",
-    "exercises/14-enums/enums.md.md",
     "notes/13-enums/enums.md",
+    "README.md",
+    "exercises/14-enums/enums.md",
     "notes/07-structs/structs.md",
     "exercises/10-structs/structs.md",
     "exercises/14-enums",

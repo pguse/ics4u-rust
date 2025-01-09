@@ -84,7 +84,7 @@ enum Direction {
 
 Now the code should run without error.
 
-# Example - Enums that hold data
+# Example - An Enum that holds data
 
 In Rust, you can think of **enums** as a way to define a type by enumerating its possible variants, each of which can optionally store associated data.
 

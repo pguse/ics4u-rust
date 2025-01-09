@@ -23,3 +23,4 @@ Complete the following exercises.
    - Create another `enum` `Rank` for the ranks in a deck (e.g., `Two`, `Three`, `Four`, up to `Ace`).
    - Define a `struct` `Card` that uses these [enums](/notes/13-enums/enums.md) to represent a playing card.
    - **Write a function** to create a full deck of cards (52 cards) and **another function** to shuffle this deck.
+   - **Note:**  In order to complete this task, look at this [note](/notes/05-vectors/shuffle.md) on how to shuffle a vector in Rust.

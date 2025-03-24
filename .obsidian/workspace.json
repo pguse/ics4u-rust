@@ -13,13 +13,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "notes/14-game-of-life/game-of-life.md",
+                "file": "exercises/14-enums/enums.md",
                 "mode": "preview",
                 "backlinks": false,
                 "source": true
               },
               "icon": "lucide-file",
-              "title": "game-of-life"
+              "title": "enums"
             }
           }
         ]
@@ -165,9 +165,11 @@
   },
   "active": "cc79424412297dab",
   "lastOpenFiles": [
+    "notes/13-enums/enums.md",
+    "exercises/14-enums/enums.md",
+    "notes/14-game-of-life/game-of-life.md",
     "notes/14-game-of-life/graphic.png",
     "notes/05-vectors/vectors.md",
-    "notes/14-game-of-life/game-of-life.md",
     "notes/14-game-of-life/get.md",
     "notes/10-hashmaps/hashmaps.md",
     "exercises/10-structs/structs.md",
@@ -175,8 +177,6 @@
     "notes/12-iterators/flat-map.md",
     "notes/12-iterators/map-filter.md",
     "notes/14-game-of-life",
-    "exercises/14-enums/enums.md",
-    "notes/13-enums/enums.md",
     "exercises/09-vectors/vectors.md",
     "README.md",
     "notes/07-structs/structs.md",

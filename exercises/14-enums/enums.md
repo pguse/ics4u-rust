@@ -86,10 +86,12 @@ fn main() {
 ```
 
 ## 09-3:  Transaction History
-Extend the **BankAccount** program to store a **history of transactions**. Use a `Vec<Transaction>` to log every transaction applied to the account. Add a **method** to display the transaction history in a user-friendly way.
+Extend the **BankAccount** program to store a **history of transactions**. Use a `Vec<Transaction>` to `log` every transaction applied to the account. Add a `log' field to the `BankAccount` **struct**. Add a **method** to display the transaction history in a user-friendly way.
 
 ## 09-4:  Account Types
-Modify the program to support different account types using an **enum**. For example, you could add `enum AccountType { Savings, Checking, Business }` and store it in the **BankAccount** `struct`. Add logic to enforce different rules based on account type _(e.g., withdrawal limits for Savings accounts)_.
+Modify the program to support different account types using an **enum**. For example, you could add `enum AccountType { Savings, Checking }` and include it as a field in the **BankAccount** `struct`. Add logic to enforce different rules based on account type _(e.g., set the withdrawal limit for Savings accounts to $500.00)_.
 
 ## 09-5:  Interest Calculation
-Add a **method** to calculate interest on the account balance. Use an additional field in the **BankAccount** `struct` to store an interest rate. The method should apply the interest based on the account type or balance amount.
+Add a **method** to calculate interest on the account balance. Use an additional field in the **BankAccount** `struct` to store an interest rate. The method should apply the interest based on the account type or balance amount. Include an ApplyInterest variant to the Transaction `enum`. Include this `Transaction` in your **log** of transactions.
+
+Demonstrate what you have done in exercises #3-5 in the `main()` function.

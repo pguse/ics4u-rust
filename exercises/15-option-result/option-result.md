@@ -36,3 +36,21 @@ Create a function that divides two numbers and returns a `Result`. If the diviso
 ## 15-4:  Parsing a Number
 
 Write a program that parses a string into an integer. If the string cannot be parsed, return an error. Otherwise, return the integer.
+
+## 15-5: Solve a Quadratic
+
+```rust
+fn solve(a: i32, b: i32, c: i32) -> Result< (f64,f64), String > {
+    // Add code here that implements
+    // the quadratic formula
+}
+
+fn main() {
+    match solve(1,-1,-12) {
+        // Add code here that outputs a value
+        // or 'No Real Solution'
+    }
+}
+```
+
+Based on the code [above](https://play.rust-lang.org/?version=stable&mode=debug&edition=2021&gist=4f3c18f0dc2cef2c3b8dac39ead2ad83), finish the function called `solve(a: i32, b: i32, c: i32) -> Result<(f64,f64), String>` that takes three parameters representing the coefficients of a quadratic equation:  and returns either the value of the solution or the string 'No Real Solution'.  Notice that this example uses the **Result** enum instead of the **Option** enum.  Provide **two examples** in the `main()` function that demonstrate a real solution and a no real solution case.

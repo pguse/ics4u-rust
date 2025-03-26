@@ -21,7 +21,7 @@ Write a program to calculate a discount based on an optional coupon code. If a u
 
 ## 15-2:  Summing Numbers
 
-Create a function that takes a list of `Option<i32>` values and returns the sum of all `Some` values while ignoring `None`.
+Create a function that takes a list of `Option<i32>` values and returns the sum of all `Some` values while ignoring `None`. - [Answer](https://play.rust-lang.org/?version=stable&mode=debug&edition=2021&gist=261ba75f9fdb0eaf8797e7caef1773a1)
 
 **Challenge:** Modify the program to handle negative numbers differently (e.g., skip them or replace with zeros).
 

@@ -11,7 +11,7 @@ Complete the following exercises.
 
 ## 15-0:  Validating User Input
 
-Create a program that takes an optional age input from a user. If the user provides an age, print `"You are X years old"`. If no age is provided, print `"Age not provided"`.
+Create a program that takes an optional age input from a user. If the user provides an age, print `"You are X years old"`. If no age is provided, print `"Age not provided"`. - [Answer](https://play.rust-lang.org/?version=stable&mode=debug&edition=2021&gist=7e20607f3299d021830eea27b856f609)
 
 **Challenge:** Try to make the input dynamic using `stdin`! - [Answer](https://play.rust-lang.org/?version=stable&mode=debug&edition=2021&gist=1bb837604bde19fd8646f7b973c9e95b)
 
@@ -40,7 +40,7 @@ Write a program that parses a string into an integer. If the string cannot be pa
 ## 15-5: Solve a Quadratic
 
 ```rust
-fn solve(a: i32, b: i32, c: i32) -> Result< (f64,f64), String > {
+fn solve(a: f64, b: f64, c: f64) -> Result< (f64,f64), String > {
     // Add code here that implements
     // the quadratic formula
 }
@@ -53,4 +53,4 @@ fn main() {
 }
 ```
 
-Based on the code [above](https://play.rust-lang.org/?version=stable&mode=debug&edition=2021&gist=4f3c18f0dc2cef2c3b8dac39ead2ad83), finish the function called `solve(a: i32, b: i32, c: i32) -> Result<(f64,f64), String>` that takes three parameters representing the coefficients of a quadratic equation:  and returns either the value of the solution or the string 'No Real Solution'.  Notice that this example uses the **Result** enum instead of the **Option** enum.  Provide **two examples** in the `main()` function that demonstrate a real solution and a no real solution case.
+Based on the code [above](https://play.rust-lang.org/?version=stable&mode=debug&edition=2021&gist=1df3348dd65e9c8a1ee2d52b66195d40), finish the function called `solve(a: f64, b: f64, c: f64) -> Result<(f64,f64), String>` that takes three parameters representing the coefficients of a quadratic equation:  and returns either the value of the solution or the string 'No Real Solution'.  Notice that this example uses the **Result** enum instead of the **Option** enum.  Provide **two examples** in the `main()` function that demonstrate a real solution and a no real solution case.

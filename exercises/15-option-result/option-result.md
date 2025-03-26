@@ -31,7 +31,7 @@ Create a function that takes a list of `Option<i32>` values and returns the sum 
 
 ## 15-3:  Division with Error Handling
 
-Create a function that divides two numbers and returns a `Result`. If the divisor is zero, return an error. Otherwise, return the result of the division.
+Create a function that divides two numbers and returns a `Result`. If the divisor is zero, return an error. Otherwise, return the result of the division. - [Answer](https://play.rust-lang.org/?version=stable&mode=debug&edition=2021&gist=6bcd77f48bfcb6a5a77c6b54950780b3)
 
 ## 15-4:  Parsing a Number
 

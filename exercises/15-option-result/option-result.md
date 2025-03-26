@@ -13,7 +13,7 @@ Complete the following exercises.
 
 Create a program that takes an optional age input from a user. If the user provides an age, print `"You are X years old"`. If no age is provided, print `"Age not provided"`.
 
-**Challenge:** Try to make the input dynamic using `stdin`!
+**Challenge:** Try to make the input dynamic using `stdin`! - [Answer](https://play.rust-lang.org/?version=stable&mode=debug&edition=2021&gist=1bb837604bde19fd8646f7b973c9e95b)
 
 ## 15-1:  Calculating Discount
 
